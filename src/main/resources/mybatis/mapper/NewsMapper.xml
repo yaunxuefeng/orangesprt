@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="NewsMapper">
+
+    <select id="getById" resultType="com.fullhome.website.pojo.News">
+        select * from News where articleId = #{articleId}
+    </select>
+
+    <insert id="insertNews" parameterType="com.fullhome.website.pojo.News">
+        insert ignore into News (
+        articleType, createDate, isUse , imageUrl, content, endTime, title, isTop
+        ) values(#{articleType}, #{createDate}, #{isUse}, #{imageUrl}, #{content}, #{endTime}, #{title}, #{isTop})
+    </insert>
+
+</mapper>
