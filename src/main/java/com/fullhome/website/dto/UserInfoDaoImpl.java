@@ -4,7 +4,7 @@ import com.fullhome.website.pojo.UserInfo;
 import org.springframework.stereotype.Repository;
 
 /**
- * 用户信息操作类s
+ * 用户信息操作类sa
  * Created by yuanxuefeng on 15/11/18.
  */
 @Repository
